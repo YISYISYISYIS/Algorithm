@@ -2,7 +2,6 @@ function solution(my_string) {
     var answer = 0;
     let tempNum = my_string.split(" ");
     let saveValue = Number(tempNum[0]);
-    let indexSymbol = (tempNum[1]);
     
     for(let i = 1; i < tempNum.length; i+=2){
         let currIndex = Number(tempNum[i+1]);
