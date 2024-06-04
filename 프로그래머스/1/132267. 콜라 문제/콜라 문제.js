@@ -38,8 +38,10 @@ function solution(a, b, n) {
         let tempNum = 0
         tempNum = Math.floor(n / a); 
         answer += tempNum * b;
-        n = n % a + tempNum * b;
-        
+          //마트에 가져간 빈병개수에 교환비율 *b를곱해 받은 콜라갯수를 누적함
+        n = (n % a) + (tempNum * b);
+        //보유중인 빈경개수(n)에서 마트에 가져간 빈병개수를 뺀 나머지를 업뎃
+          //받은 콜라개수만큼 n줄어들고 남은 빈병개수가 새로운n
         console.log(tempNum)
     }
     
